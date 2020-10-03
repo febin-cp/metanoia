@@ -4,24 +4,28 @@ export const MainDash = styled.div`
     display: flex;
     padding: 10px 20px;
     justify-content: space-between;
-    height: 100vh;
-    overflow: auto;
 `;
 
 export const SubDash = styled.div`
     display: flex;
     padding: 10%;
     justify-content: center;
-    height: 100vh;
-    overflow: auto;
+    @media only screen and (max-width: 1250px) {
+        /* padding: 10%; */
+        justify-content: center;  
+        display: block;
+        width: 100%;
+        overflow: auto;
+         }
 `;
 
 
 export const BaseImage = styled.div`
-    font-weight: bold;
-    font-size: 40px;
-    font-family: lato;
-    text-align: center;
+    @media only screen and (max-width: 1250px) {
+        /* padding: 10%; */
+        /* justify-content: center;   */
+        width: 100%;
+         }
 `;
 
 
@@ -48,4 +52,13 @@ export const ImageMid = styled.img`
     width: 98%;
     @media only screen and (max-width: 1250px) {
         margin-top: 50px  }
+`;
+
+export const ImageInsta = styled.img`
+    width: 100px;
+    height: 100px;
+`;
+
+export const Desc = styled.div`
+    width: 100%;    
 `;
